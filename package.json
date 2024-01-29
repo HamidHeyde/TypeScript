@@ -1,0 +1,14 @@
+{
+  "name": "typescript_practices",
+  "config" : {
+    "project" : "basics"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "start": "ts-node ./$npm_package_config_project/index.ts",
+    "compile": "tsc ./$npm_package_config_project/index.ts"
+  }
+}
