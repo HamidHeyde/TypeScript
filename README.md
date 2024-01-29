@@ -29,7 +29,7 @@ npm/yarn install
 ```
 - Using `ts-node`
 ```
-ts-node ./FOLDER_NAME/index.ts
+ts-node ./FOLDER_NAME
 ```
 - Using `npm`/`yarn`
 ```
