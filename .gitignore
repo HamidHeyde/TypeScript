@@ -1,0 +1,9 @@
+#node_modules
+node_modules/*
+
+#vscode configs
+.vscode/*
+
+#yarn configs
+yarn.*
+yarn-error.*
