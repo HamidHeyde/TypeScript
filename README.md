@@ -2,7 +2,7 @@
 #### Editor
 - Install `vscode` > `ctrl + p`
 ```
-Shell Command: Install code command in the Path
+> Shell Command: Install code command in the Path
 ```
 - Install `prettier` extension and apply following `user` settings in :
   - check `Format on save`
@@ -25,14 +25,14 @@ npx tsc --init
 #### Running The Project
 - Install Dependencies
 ```
-yarn install
+npm/yarn install
 ```
 - Using `ts-node`
 ```
 ts-node ./FOLDER_NAME/index.ts
 ```
-- Using `npm` (or `yarn`)
+- Using `npm`/`yarn`
 ```
 npm config set typescript_practices:project FOLDER_NAME
-npm (or yarn) run start
+npm/yarn run start
 ```
