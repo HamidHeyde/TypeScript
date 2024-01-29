@@ -31,7 +31,7 @@ yarn install
 ```
 ts-node ./FOLDER_NAME/index.ts
 ```
--Using `npm` (or `yarn`)
+- Using `npm` (or `yarn`)
 ```
 npm config set typescript_practices:project FOLDER_NAME
 npm (or yarn) run start
