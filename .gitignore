@@ -7,3 +7,6 @@ node_modules/*
 #yarn configs
 yarn.*
 yarn-error.*
+
+#package-lock
+package-lock.*
