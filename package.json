@@ -8,7 +8,9 @@
     "typescript": "^5.3.3"
   },
   "scripts": {
-    "start": "ts-node ./$npm_package_config_project",
-    "compile": "tsc ./$npm_package_config_project"
+    "start": "ts-node index.ts",
+    "compile": "tsc index.ts",
+    "start_project": "ts-node ./$npm_package_config_project",
+    "compile_prject": "tsc ./$npm_package_config_project"
   }
 }
