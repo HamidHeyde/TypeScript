@@ -21,18 +21,18 @@ yarn add ts-node -D
 ```npm
 npx tsc --init
 ```
-
-#### Running The Project
+#### Running the project
 - Install Dependencies
 ```
 npm/yarn install
 ```
-- Using `ts-node`
+- Running the current project from the root `index.ts`
 ```
-ts-node ./FOLDER_NAME
+npm/yarn run start
 ```
+##### Running an individual folder within the Project
 - Using `npm`/`yarn`
 ```
 npm config set typescript_practices:project FOLDER_NAME
-npm/yarn run start
+npm/yarn run start_project
 ```
