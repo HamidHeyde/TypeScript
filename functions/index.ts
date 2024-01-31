@@ -1,7 +1,8 @@
 import { 
   addNumbers,
   concatStrings,
-  concatMultiStrings
+  concatMultiStrings,
+  fetchData
 } from "./functions";
 
 console.log(
@@ -9,5 +10,6 @@ console.log(
   concatStrings("hello"), '\n',
   concatStrings("hello", "you"), '\n',
   concatMultiStrings("hello"), '\n',
-  concatMultiStrings("hello", "to", "you"), '\n'
+  concatMultiStrings("hello", "to", "you"), '\n',
+  fetchData("www.google.com"), '\n'
 )

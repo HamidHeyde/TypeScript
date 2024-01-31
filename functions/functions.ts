@@ -8,3 +8,5 @@ export const concatMultiStrings = (a: string, ...args: string[]): string => {
 
   return `${a} - ${args.join(' * ')}`
 }
+
+export const  fetchData = (url:string): Promise<string> => Promise.resolve(`Data from ${url}`)
