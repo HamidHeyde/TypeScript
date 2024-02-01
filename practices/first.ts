@@ -40,9 +40,14 @@ function findHouses(
   let housesArray: House[] =
     typeof houses === 'string' ? JSON.parse(houses) : houses;
 
+  // map function
+  const mapFunction = (house: House): Pick<House, 'name'> => ({
+    name: house.name
+  });
+
   return filter
-    ? housesArray.filter(filter).map((item) => ({ name: item.name }))
-    : housesArray.map((item) => ({ name: item.name }));
+    ? housesArray.filter(filter).map(mapFunction)
+    : housesArray.map(mapFunction);
 }
 
 console.log(
