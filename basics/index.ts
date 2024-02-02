@@ -1,3 +1,5 @@
+console.log("\n","---------Basics---------","\n")
+
 /** String, Number, Boolean, Regex */
 const theStringVariable: string = "Hamid";
 let theNumberVariable: number = 1;
