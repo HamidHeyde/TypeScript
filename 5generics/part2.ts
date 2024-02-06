@@ -1,4 +1,5 @@
-// Usage of Key Of
+console.log('\n', '---------Generics 2---------', '\n');
+// Usage of keyOf
 
 /**
  * Example 1

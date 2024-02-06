@@ -1,4 +1,5 @@
-// state function using Generics to support every possible type
+console.log('\n', '---------Generics 1---------', '\n');
+// state function using Generics to include and supprt all types (number, ...)
 type iState<T> = [() => T | null, (str: T) => T]
 
 export const state =  <T>(initial?: T): iState<T> => {
