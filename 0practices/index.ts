@@ -1,2 +1,2 @@
-// import "./first"
-import "./second"
+// import "./1first"
+import "./2second"
