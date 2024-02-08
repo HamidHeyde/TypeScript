@@ -1,3 +1,3 @@
-import "./utility"
-// import "./readonly"
+// import "./utility"
+import "./readonly"
 // import "./enums"
