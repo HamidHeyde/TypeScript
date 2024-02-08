@@ -1,3 +1,10 @@
+// Defining a class and a property within a constructor
+class myClass{
+  // private myVariable:number = 10
+  // The one below is equal than the one above
+  constructor(private myVariable: number){}
+}
+
 /**
  * In Memory Db is a strig-based db
  * It stores everything in an object where each key would be the id of that db
