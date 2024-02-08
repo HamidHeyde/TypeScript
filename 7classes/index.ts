@@ -1,1 +1,2 @@
-import "./class"
+// import "./class"
+import "./classGeneric"
