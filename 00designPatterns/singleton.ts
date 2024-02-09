@@ -1,3 +1,4 @@
+console.log('\n', '---------Singleton---------', '\n');
 class Singleton {
   private static instance: Singleton | null = null
   private constructor (private someVariable?: number) {}

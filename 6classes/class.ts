@@ -1,3 +1,4 @@
+console.log('\n', '---------TypeScript Classes---------', '\n');
 // Defining a class and a property within a constructor
 class myClass{
   // private myVariable:number = 10

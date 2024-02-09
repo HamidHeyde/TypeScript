@@ -1,3 +1,4 @@
+console.log('\n', '---------Generic Classes---------', '\n');
 /**
  * This is the Generic model of the same class
  */
