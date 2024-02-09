@@ -1,2 +1,3 @@
 // import "./class"
-import "./classGeneric"
+// import "./classGeneric"
+import "./abstract"
