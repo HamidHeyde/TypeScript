@@ -1,2 +1,1 @@
-import "./approach1"
-// import "./approach2"
+import './approach1';
