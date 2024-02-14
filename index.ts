@@ -1,10 +1,17 @@
-// import './00designPatterns'
-// import "./0practices"
-// import './1basics'
-// import './2functions'
-// import "./3optionals"
-// import "./4tuples"
-// import "./5generics"
-// import "./6classes"
-// import "./7utility"
-import "./8mixin"
+/**
+ * Type Script
+ */
+// import './typeScript/00designPatterns'
+// import "./typeScript/0practices"
+// import './typeScript/1basics'
+// import './typeScript/2functions'
+// import "./typeScript/3optionals"
+// import "./typeScript/4tuples"
+// import "./typeScript/5generics"
+// import "./typeScript/6classes"
+// import "./typeScript/7utility"
+import "./typeScript/00designPatterns/8mixin"
+
+/**
+ * React
+ */
