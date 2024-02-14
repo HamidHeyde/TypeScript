@@ -1,17 +1,12 @@
 #node_modules
 node_modules/*
-*/node_modules/*
 
 #vscode configs
-*/.vscode/*
 .vscode/*
 
 #yarn configs
 yarn.*
 yarn-error.*
-*/yarn.*
-*/yarn-error.*
 
 #package-lock
 package-lock.*
-*/package-lock.*
