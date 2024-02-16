@@ -1,5 +1,4 @@
 import TextField from '@mui/material/TextField';
-import { styled } from '@mui/material/styles';
 import User, { tUser } from './components/user';
 
 const usersList: tUser[] = [
@@ -11,24 +10,28 @@ const usersList: tUser[] = [
 ];
 
 const App = (): JSX.Element => {
+  const classes = styles()
+
   return (
-    <Root>
-      <TextInput />
+    <div style={classes.root as React.CSSProperties}>
+      <TextField style={classes.textInput as React.CSSProperties}/>
       <User users={usersList} />
-    </Root>
+    </div>
   );
 };
 
 export default App;
 
-const Root = styled('div')(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center'
-}));
 
-const TextInput = styled(TextField)(({ theme }) => ({
-  marginTop: '20px',
-  width: '300px'
-}));
+const styles = () => ({
+  root: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  textInput: {
+    marginTop: '20px',
+    width: '300px'
+  }
+});
