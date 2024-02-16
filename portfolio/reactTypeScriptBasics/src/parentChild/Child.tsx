@@ -1,7 +1,11 @@
-export type tChildData = {
-  color: string
-}
+type tChildData = {
+  color: string;
+};
 
-const Child = ({color}: tChildData) => <div> {color}: from children </div>
+type tChildComponent = React.FC<tChildData>;
 
-export default Child
+const Child: tChildComponent = ({ color }) => (
+  <div> {color}: from children </div>
+);
+
+export default Child;

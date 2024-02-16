@@ -1,3 +1,3 @@
-const Parent = () => <div> Parent </div>
+const Parent = () => <div> Parent </div>;
 
-export default Parent
+export default Parent;
