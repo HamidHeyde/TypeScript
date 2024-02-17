@@ -1,7 +1,11 @@
 import UserList from './UserList';
+import UserSearch from './UserSearch';
 
 export const StatesSection: React.FC = () => (
-  <UserList/>
+  <>
+    <UserList/>
+    <UserSearch/>
+  </>
 )
 
 export default StatesSection;
