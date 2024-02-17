@@ -1,12 +1,7 @@
-import Parent from './parentChild/Parent';
-import Child from './parentChild/Child';
+import PropsSection from './props'
 
 const App = () => (
-  <div>
-    <Parent>
-      <Child color="RED" />
-    </Parent>
-  </div>
+  <PropsSection/>
 );
 
 export default App;
