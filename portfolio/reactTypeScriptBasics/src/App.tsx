@@ -3,8 +3,9 @@ import Child from './parentChild/Child';
 
 const App = () => (
   <div>
-    <Parent />
-    <Child color="RED (being passed in)" />
+    <Parent>
+      <Child color="RED" />
+    </Parent>
   </div>
 );
 

@@ -5,7 +5,10 @@ type tChildData = {
 type tChildComponent = React.FC<tChildData>;
 
 const Child: tChildComponent = ({ color }) => (
-  <div> {color}: from children </div>
+  <div>
+    <h4> In the child </h4>
+    The color being passed in is =:= {color}
+  </div>
 );
 
 export default Child;
