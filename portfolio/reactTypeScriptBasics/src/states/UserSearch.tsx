@@ -39,7 +39,7 @@ const UserSearch = () => {
       <hr />
       <br />
       <input
-        id="valName"
+        id="userName"
         value={val}
         onChange={handleOnChange}
         onKeyDown={handleKeyDown}
