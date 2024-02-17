@@ -1,7 +1,11 @@
 import PropsSection from './props'
+import StatesSection from './states';
 
 const App = () => (
-  <PropsSection/>
+  <>
+    {/* <PropsSection/> */}
+    <StatesSection/>
+  </>
 );
 
 export default App;
