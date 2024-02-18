@@ -1,11 +1,2 @@
-import UserList from './UserList';
-import UserSearch from './UserSearch';
-
-export const StatesSection: React.FC = () => (
-  <>
-    <UserList/>
-    <UserSearch/>
-  </>
-)
-
-export default StatesSection;
+export { default as UserList } from './UserList';
+export { default as UserSearch } from './UserSearch';
