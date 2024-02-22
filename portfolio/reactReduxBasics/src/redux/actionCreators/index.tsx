@@ -1,0 +1,1 @@
+export { searchRepositories } from './repositoriesActionCreator';
