@@ -1,6 +1,6 @@
 import GitSearch from './gitSearch';
 import { Provider } from 'react-redux';
-import store from '../redux/store';
+import store from '../initial/redux/store';
 
 /**
  * Renders the main App component which wraps the GitSearch component in a Redux

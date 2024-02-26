@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import useActionCreators from '../hooks/useActionCreators';
-import useReduxStore from '../hooks/useReduxStore';
+import useActionCreators from '../initial/hooks/useActionCreators';
+import useReduxStore from '../initial/hooks/useReduxStore';
 
 /**
  * GitSearch component fetches Git repository search results.

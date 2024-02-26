@@ -1,6 +1,6 @@
-import { useDispatch } from "react-redux";
-import * as ActionCreators from "../redux/actionCreators";
-import { bindActionCreators } from "redux";
+import { useDispatch } from 'react-redux';
+import * as ActionCreators from '../redux/actionCreators';
+import { bindActionCreators } from 'redux';
 
 /**
  * Hook that binds action creators to dispatch.

@@ -1,5 +1,5 @@
-import { combineReducers } from "redux";
-import { default as gitSearchReducer } from "./gitSearchReducer";
+import { combineReducers } from 'redux';
+import { default as gitSearchReducer } from './gitSearchReducer';
 
 /**
  * Combines all reducers into a single root reducer.

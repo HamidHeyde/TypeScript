@@ -1,4 +1,4 @@
-import { gitSearchActionTypes as ActionTypes } from "../actionTypes";
+import { gitSearchActionTypes as ActionTypes } from '../actionTypes';
 
 /**
  * Action interface for initiating a Git search.
@@ -36,4 +36,4 @@ type Actions =
   | iGitSearchErrorAction
   | iGitSearchSuccessAction;
 
-export default Actions
+export default Actions;
