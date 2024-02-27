@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import useActionCreators from '../initial/hooks/useActionCreators';
-import useReduxStore from '../initial/hooks/useReduxStore';
+import useActionCreators from '../traditionalApproach/hooks/useActionCreators';
+import useReduxStore from '../traditionalApproach/hooks/useReduxStore';
 
 /**
  * GitSearch component fetches Git repository search results.
@@ -11,8 +11,8 @@ import useReduxStore from '../initial/hooks/useReduxStore';
  */
 const GitSearch: React.FC = () => {
   const [query, setQuery] = useState('');
-  const { gitSearchActionCreators } = useActionCreators();
-  const { data, error, loading } = useReduxStore((state) => state.gitSearch);
+  const { searchGitHubRepositories } = useActionCreators();
+  const { loading, error, payload } = useReduxStore((state) => state.gitSearch);
 
   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value);
@@ -21,14 +21,14 @@ const GitSearch: React.FC = () => {
   const handleOnKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === 'Enter') {
       console.log('Search Term =>', query);
-      gitSearchActionCreators(query);
+      searchGitHubRepositories(query);
       setQuery('');
     }
   };
 
   const handleButtonOnClick = () => {
     console.log('Search Term =>', query);
-    gitSearchActionCreators(query);
+    searchGitHubRepositories(query);
     setQuery('');
   };
 
@@ -47,7 +47,9 @@ const GitSearch: React.FC = () => {
       <div>
         {error && <h3>{error}</h3>}
         {loading && <h3>Loading...</h3>}
-        {!error && !loading && data.map((name) => <div key={name}>{name}</div>)}
+        {!error &&
+          !loading &&
+          payload.map((name, idx) => <div key={`${name}_${idx}`}>{name}</div>)}
       </div>
     </>
   );
