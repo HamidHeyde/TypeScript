@@ -25,14 +25,14 @@ const GitSearch: React.FC = () => {
   const handleOnKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === 'Enter') {
       console.log('Search Term =>', query);
-      dispatch(gitSearch(query));
+      query.trim() && dispatch(gitSearch(query));
       setQuery('');
     }
   };
 
   const handleButtonOnClick = () => {
     console.log('Search Term =>', query);
-    dispatch(gitSearch(query));
+    query.trim() && dispatch(gitSearch(query));
     setQuery('');
   };
 
