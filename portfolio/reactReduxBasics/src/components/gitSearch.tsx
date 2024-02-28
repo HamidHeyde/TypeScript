@@ -1,7 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
-import useActionCreators from '../traditionalApproach/hooks/useActionCreators';
-import useReduxStore from '../traditionalApproach/hooks/useReduxStore';
+import { useAppDispatch, useAppSelector } from '../newApproach/store';
+import { gitSearch } from '../newApproach/reducers/gitSearchReducers';
+// import useActionCreators from '../traditionalApproach/hooks/useActionCreators';
+// import useReduxStore from '../traditionalApproach/hooks/useReduxStore';
 
 /**
  * GitSearch component fetches Git repository search results.
@@ -11,8 +13,10 @@ import useReduxStore from '../traditionalApproach/hooks/useReduxStore';
  */
 const GitSearch: React.FC = () => {
   const [query, setQuery] = useState('');
-  const { searchGitHubRepositories } = useActionCreators();
-  const { loading, error, payload } = useReduxStore((state) => state.gitSearch);
+  const dispatch = useAppDispatch();
+  const { loading, error, payload } = useAppSelector(
+    (state) => state.gitSearch
+  );
 
   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value);
@@ -21,14 +25,14 @@ const GitSearch: React.FC = () => {
   const handleOnKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === 'Enter') {
       console.log('Search Term =>', query);
-      searchGitHubRepositories(query);
+      dispatch(gitSearch(query));
       setQuery('');
     }
   };
 
   const handleButtonOnClick = () => {
     console.log('Search Term =>', query);
-    searchGitHubRepositories(query);
+    dispatch(gitSearch(query));
     setQuery('');
   };
 
