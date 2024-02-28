@@ -2,8 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 // import { useAppDispatch, useAppSelector } from '../newApproach/store';
 // import { gitSearch } from '../newApproach/reducers/gitSearchReducers';
-// import useActionCreators from '../traditionalApproach/hooks/useActionCreators';
-// import useReduxStore from '../traditionalApproach/hooks/useReduxStore';
 import {
   useAppDispatch,
   useAppSelector
