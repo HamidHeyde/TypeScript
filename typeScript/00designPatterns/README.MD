@@ -15,5 +15,5 @@
     When the data is updated in the observable, the same class (observable) will iterate through the array of the observers and calls all those functions passing in the data that was updated.<br/>
    - `Handler`
     Its the same as the Observer. The only difference is that it is conditional. the data should be passed to the subscribed observer that matches the condition. and when thats done, it will skip the rest. and wont call the other available observers in the array.<br/>
- - [Proxy](./4proxy)<br/>
- - [Flyweight](./5flyweight)<br/>
+ - [Proxy](./4proxy)
+ The idea here is to wrap an object with a Proxy and defining setters and getters in away that when accessing that object (to read value or set/update a value) some kind of processing happens before the value is accessed (e.g.) validation before setting a value for a prop in an object<br/>
