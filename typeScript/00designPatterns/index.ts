@@ -1,4 +1,5 @@
 // import './1singleton'
 // import './2factory'
 // import './3observer'
-import './4proxy'
+// import './4proxy'
+import './5flyweight'
