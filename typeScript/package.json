@@ -1,7 +1,7 @@
 {
   "name": "typescript_practices",
-  "config" : {
-    "project" : "basics"
+  "config": {
+    "project": "basics"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
@@ -12,5 +12,8 @@
     "compile": "tsc index.ts",
     "start_project": "ts-node ./$npm_package_config_project",
     "compile_prject": "tsc ./$npm_package_config_project"
+  },
+  "dependencies": {
+    "axios": "^1.6.7"
   }
 }
