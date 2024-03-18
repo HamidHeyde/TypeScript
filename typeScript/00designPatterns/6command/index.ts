@@ -1,2 +1,2 @@
 // import './commandClass'
-// import './commandFunction'
+import './commandFunction'
