@@ -2,4 +2,6 @@
 // import './2factory'
 // import './3observer'
 // import './4proxy'
-import './5flyweight'
+// import './5flyweight'
+import './6command'
+import './7memento'
