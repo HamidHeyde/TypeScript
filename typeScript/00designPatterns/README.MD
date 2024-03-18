@@ -23,3 +23,7 @@
   - The idea here is to have some sort of objects keeping a state. To update the state you need to receive a command object providing both the `Command` and the `Undo` command. You should also keep a stack of commands.
   - The state will be updated by running the command from the object (e.g. AddOneCommand), and then the command object should be pushed into the command stack. 
   - When Undo is  called, the last command will be popped from the command stack. Using the undo command, the state will be restored to the last state.<br/>
+- [Memento](./7memento/)
+  - The idea here is the same as the `Command` pattern where you would be able to Undo and go back to the last state
+  - The difference here is that, instead of keeping a stack of commands, the `Memento` pattern keeps a stack of `states`. every time you updated the state, you, push the new state, to the stack. and every time you undo a state, you pop the last state from the stack and restore to that state.
+  - So, there is no need for the command object  to contain the `undo` command
