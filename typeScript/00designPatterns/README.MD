@@ -18,4 +18,4 @@
  - [Proxy](./4proxy)
  The idea here is to wrap an object with a Proxy and defining setters and getters in away that when accessing that object (to read value or set/update a value) some kind of processing happens before the value is accessed (e.g.) validation before setting a value for a prop in an object<br/>
 - [Flyweight](./5flyweight)<br/>
- The idea here is to make sth happen if some condition is satisfied. (e.g. Lets say we have an object containing the data urls for some specific props `{pros: url}` if the prop is matched with what is required, then the data will be fetched. or else we wont do so. This way we wont occupy memory more than its required)
+ The idea here is to make sth happen if some condition is satisfied. (e.g. Lets say we have an object containing the data urls for some specific props `{pros: url}` if the prop is matched with what is required, then the data will be fetched. or else we wont do so. This way we wont occupy memory more than its required)<br/>
