@@ -4,4 +4,6 @@
 // import './4proxy'
 // import './5flyweight'
 // import './6command'
-import './7memento'
+// import './7memento'
+import './8visitor'
+// import './9iterator'
