@@ -1,2 +1,2 @@
-// import './mementoClass'
-import './mementoFunction'
+import './mementoClass'
+// import './mementoFunction'
