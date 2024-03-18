@@ -19,3 +19,7 @@
  The idea here is to wrap an object with a Proxy and defining setters and getters in away that when accessing that object (to read value or set/update a value) some kind of processing happens before the value is accessed (e.g.) validation before setting a value for a prop in an object<br/>
 - [Flyweight](./5flyweight)<br/>
  The idea here is to make sth happen if some condition is satisfied. (e.g. Lets say we have an object containing the data urls for some specific props `{pros: url}` if the prop is matched with what is required, then the data will be fetched. or else we wont do so. This way we wont occupy memory more than its required)<br/>
+- [Command](./6command/)
+  - The idea here is to have some sort of objects keeping a state. To update the state you need to receive a command object providing both the `Command` and the `Undo` command. You should also keep a stack of commands.
+  - The state will be updated by running the command from the object (e.g. AddOneCommand), and then the command object should be pushed into the command stack. 
+  - When Undo is  called, the last command will be popped from the command stack. Using the undo command, the state will be restored to the last state.<br/>
