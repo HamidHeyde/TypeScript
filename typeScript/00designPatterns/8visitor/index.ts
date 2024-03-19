@@ -1,1 +1,3 @@
-import './visitor'
+// import './visitorBasic'
+// import './visitorClass'
+import './visitorFunction'
