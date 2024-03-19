@@ -1,1 +1,2 @@
-import './iterator'
+// import './iteratorBasic'
+import './iteratorFunction'
