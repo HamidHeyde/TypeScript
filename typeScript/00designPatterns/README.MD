@@ -28,7 +28,11 @@
   - The difference here is that, instead of keeping a stack of commands, the `Memento` pattern keeps a stack of `states`. every time you updated the state, you, push the new state, to the stack. and every time you undo a state, you pop the last state from the stack and restore to that state.
   - So, there is no need for the command object  to contain the `undo` command <br/>
 - [Visitor](./8visitor/)
-  - as a `Class`: The idea is to have a base class, which has a method called `accept(visitor)`.
-   - Through the 1st scenario: the accept method will call on visitor passing in `this` as argument. So, the visitor will be able to access the data of the object and apply any modification if required
-   - Through the 2nd scenario: the accept method can do sth (e.g. fetching data) and when required call the visitor passing in the processed `data`. The visitor can then uses that data and does what it wishes with it.<br/>
-  
+  - As a `Class`: The idea is to have a base class, which has a method called `accept(visitor)`.
+    - Through the 1st scenario: the accept method will call on visitor passing in `this` as argument. So, the visitor will be able to access the data of the object and apply any modification if required
+    - Through the 2nd scenario: the accept method can do sth (e.g. fetching data) and when required call the visitor passing in the processed `data`. The visitor can then uses that data and does what it wishes with it.<br/>
+  - As a `function`: the idea here is to hav a base function having any number of desired args and a callback `function(...args, callback)`
+   - For any required scenario, the base function can perform any required operation and then call the callback passing in the processed data. The callback can then uses that data and does what it wishes with it.
+- [Iterator](./9iterator/)
+The idea here is to have a base function or a class. The base should have `next()` and `hasNext()` methods. every time the `next()` is called, it should return the next value in the array. and when `hasNext()` is called, it should return the next set of data (e.g. fetching next 10 records from the database).
+  - `implementation`: in javascript we can use g`enerator function` and `yield` structure to achieve this.
