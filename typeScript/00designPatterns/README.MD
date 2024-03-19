@@ -26,4 +26,9 @@
 - [Memento](./7memento/)
   - The idea here is the same as the `Command` pattern where you would be able to Undo and go back to the last state
   - The difference here is that, instead of keeping a stack of commands, the `Memento` pattern keeps a stack of `states`. every time you updated the state, you, push the new state, to the stack. and every time you undo a state, you pop the last state from the stack and restore to that state.
-  - So, there is no need for the command object  to contain the `undo` command
+  - So, there is no need for the command object  to contain the `undo` command <br/>
+- [Visitor](./8visitor/)
+  - as a `Class`: The idea is to have a base class, which has a method called `accept(visitor)`.
+   - Through the 1st scenario: the accept method will call on visitor passing in `this` as argument. So, the visitor will be able to access the data of the object and apply any modification if required
+   - Through the 2nd scenario: the accept method can do sth (e.g. fetching data) and when required call the visitor passing in the processed `data`. The visitor can then uses that data and does what it wishes with it.<br/>
+  
